@@ -11,7 +11,7 @@ class Solution {
     public static void dfs(int node,boolean[] vis,List<List<Integer>>rooms){
         vis[node]=true;
         for(int neigh:rooms.get(node)){
-            if(!vis[neigh]){
+             if(!vis[neigh]){
                 dfs(neigh,vis,rooms);
             }
         }
